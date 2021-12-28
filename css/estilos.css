@@ -7,6 +7,18 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+ul li a{
+    color: #ffffff;
+    text-transform: capitalize;
+
+}
+
 
 .navbar {
     position: absolute;
@@ -29,6 +41,12 @@ body{
     margin: 0 30px;
     cursor: pointer;
 
+}
+.nav-links li a:hover{
+    color: #e91963;
+}
+.nav-links ul li::not(:last-child) {
+    margin-bottom: 10px;
 }
 
 header {
@@ -81,6 +99,9 @@ header {
     display: flex;
     text-align: center;
     justify-content: center;
+}
+.header-content a:hover{
+    color: #ffffff;
 }
 
 .menu-btn {

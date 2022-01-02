@@ -496,25 +496,28 @@ ul {
 .header-product__ctn a:hover{
     color: #e91963;
 }
-.header-product .carousel-inner img {
+.main {
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner img {
     width: 100%;
-    height: 450px;
-    background-position:bottom;
-    background-size:auto;
+    height: 560px;
     display: flex;
     align-items:center;
     justify-content: center;
-    z-index: 0;
 }
 .header-product__logo {
     font-size: 34px;
     color: rgb(2, 28, 15);
-    text-shadow: 0 0 5px #e91963;
-    z-index: 1;
+    text-shadow: 0 0 5px skyblue;
 }
 
 
-.header-product__navbar {
+.navbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -524,26 +527,25 @@ ul {
     padding: 20px;
     color: rgba(2, 28, 15, 0.747);
     cursor: pointer;
-    text-shadow: 0 0 5px #e91963;
-    z-index: 2;
+    text-shadow: 0 0 5px black;
 }
 
-.header-product__nav-links {
+.nav-links {
     display: flex;
     align-items: center;
 }
 
-.header-product__nav-links li {
+.nav-links li {
     margin: 0 20px;
     cursor: pointer;
 
 }
 
-.header-product__nav-links li a:hover {
+.nav-links li a:hover {
     color: #e91963;
 }
 
-.header-product__nav-links ul li::not(:last-child) {
+.nav-links ul li::not(:last-child) {
     margin-bottom: 10px;
 }
 .menu-btn {
@@ -554,12 +556,18 @@ ul {
     cursor: pointer;
     display: none;
 }
+section {
+    width: 80%;
+    margin: 80px auto;
+}
 @media only screen and (max-width:750px) {
     .menu-btn {
         display: block;
+        
+        
     }
 
-    .header-product__navbar {
+    .navbar {
         padding: 0;
     }
 
@@ -569,7 +577,7 @@ ul {
         left: 30px;
     }
 
-    .header-product__nav-links {
+    .nav-links {
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -586,9 +594,13 @@ ul {
         border-bottom-right-radius: 30%;
     }
 
-    .header-product__nav-links li {
+    .nav-links li {
         margin: 30px auto;
 
     }
+    .carousel-inner{
+        width: 100%;
+        height: 500px;
+        }
 }
 /* FIN PRODUCTOS */

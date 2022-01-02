@@ -111,6 +111,9 @@ ul li a {
     text-align: center;
     justify-content: center;
 }
+.ctn a:hover {
+    color: #e91963;
+}
 
 .header-content a:hover {
     color: #ffffff;
@@ -472,9 +475,12 @@ ul {
 }
 /* FIN CONTACTO */
 /* PRODUCTOS SECTION */
-.header-product{
-    background-color: rgb(2, 28, 15);
+.header__product {
+    background-color: rgba(2, 28, 15, 0.747);
+    padding: 10px;
+    color: whitesmoke;
 }
+
 .header-product__ctn {
     padding: 8px 25px;
     background-color: #fc036b98;
@@ -485,7 +491,10 @@ ul {
     display: flex;
     text-align: center;
     justify-content: center;
-    z-index: 1;
+    ;
+}
+.header-product__ctn a:hover{
+    color: #e91963;
 }
 .header-product .carousel-inner img {
     width: 100%;
@@ -495,11 +504,13 @@ ul {
     display: flex;
     align-items:center;
     justify-content: center;
+    z-index: 0;
 }
 .header-product__logo {
     font-size: 34px;
     color: rgb(2, 28, 15);
     text-shadow: 0 0 5px #e91963;
+    z-index: 1;
 }
 
 
@@ -514,7 +525,7 @@ ul {
     color: rgba(2, 28, 15, 0.747);
     cursor: pointer;
     text-shadow: 0 0 5px #e91963;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header-product__nav-links {
@@ -534,5 +545,50 @@ ul {
 
 .header-product__nav-links ul li::not(:last-child) {
     margin-bottom: 10px;
+}
+.header-product__menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width:750px) {
+    .header-product__menu-btn {
+        display: block;
+    }
+
+    .header-product__navbar {
+        padding: 0;
+    }
+
+    .header-product__logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .header-product__nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(2, 28, 15);
+        background-size: cover;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+
+    .mobile-menu {
+        margin-top: 0;
+        border-bottom-right-radius: 30%;
+    }
+
+    .header-product__nav-links li {
+        margin: 30px auto;
+
+    }
 }
 /* FIN PRODUCTOS */

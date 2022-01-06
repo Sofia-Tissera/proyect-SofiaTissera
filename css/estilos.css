@@ -17,7 +17,7 @@ ul {
 }
 
 ul li a {
-    color: #ffffff;
+    color: lime;
     text-transform: capitalize;
 
 }
@@ -37,7 +37,7 @@ ul li a {
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: whitesmoke;
+    color: lime;
     cursor: pointer;
 }
 
@@ -72,10 +72,12 @@ ul li a {
 }
 
 .header-content {
-    color: whitesmoke;
+    background-color: rgba(2, 28, 15, 0.603);
+    padding: 20px 30px 20px 30px;
+    color: white;
     align-items: center;
     justify-content: center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     word-spacing: 10px;
 
 }
@@ -99,7 +101,6 @@ ul li a {
     margin-bottom: 30px;
     text-align: center;
 }
-
 .ctn {
     padding: 8px 25px;
     background-color: #fc036b98;
@@ -116,7 +117,7 @@ ul li a {
 }
 
 .header-content a:hover {
-    color: #ffffff;
+    color: lime;
 }
 
 .menu-btn {
@@ -527,7 +528,8 @@ ul {
     padding: 20px;
     color: rgba(2, 28, 15, 0.747);
     cursor: pointer;
-    text-shadow: 0 0 5px black;
+    position: fixed;
+    z-index: 5;
 }
 
 .nav-links {
